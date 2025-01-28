@@ -31,7 +31,6 @@ function renderTasks() {
   });
 }
 
-// Edit Task
 function editTask(index) {
   const newTask = prompt('Edit the task:', tasks[index]);
   if (newTask !== null && newTask.trim() !== '') {
@@ -41,7 +40,6 @@ function editTask(index) {
   }
 }
 
-// Delete Task
 function deleteTask(index) {
   tasks.splice(index, 1);
   localStorage.setItem('tasks', JSON.stringify(tasks));
